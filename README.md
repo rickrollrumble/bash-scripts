@@ -8,4 +8,4 @@ gets a list of all running containers, commits those containers in the current s
 
 images are automatically tagged, and tags are generated in the format `month_date_year`. 
 
-So, the entire image is named as `<image-name>:[tag]`
+So, the entire image is named as `<container-name>:[tag]`. Image version is stored in a file called img-version.txt that is created on first run. Script can be run using a cron job to backup containers on a set interval. 

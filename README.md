@@ -5,6 +5,8 @@ run all files using bash (or sudo bash) &lt;path-to-script>/&lt;script-name.sh>
 
 ## container-backups.sh
 
+Before setting up cronjobs, open container-backups.sh and set the username variable. The script will use it to create backup directories to store tar images.
+
 gets a list of all running containers, commits those containers in the current state, and backs them up as tar files in a created folder called container-backups.
 
 images are automatically tagged, and tags are generated in the format `month_date_year`. 
